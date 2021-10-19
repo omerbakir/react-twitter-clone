@@ -5,7 +5,7 @@ import { SearchOutlined, SettingOutlined } from "@ant-design/icons";
 
 const handleClick = (type, tweet, header) => {
     if (type === "alert") {
-        alert(header + tweet)
+        alert(header+" Bu başlık altındaki tweetleri görüntülemek istiyor musunuz?")
     } else {
         console.log(header + tweet)
     }

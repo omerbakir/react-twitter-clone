@@ -15,13 +15,13 @@ const hashtagItems = [
         id: 3,
         header: "#Adale",
         tweet: "11,7 B Tweet",
-        type: "console"
+        type: "alert"
     },
     {
         id: 4,
         header: "#Galatasaray",
         tweet: "5.456 Tweet",
-        type: "console"
+        type: "alert"
     },
 ]
 
