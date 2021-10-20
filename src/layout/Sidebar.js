@@ -4,7 +4,8 @@ import {
     MessageOutlined,
     NotificationOutlined,
     SearchOutlined,
-    TwitterOutlined
+    TwitterOutlined,
+    UserOutlined
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import UserBox from "../components/UserBox";
@@ -14,6 +15,11 @@ const menuItems = [
         name: "Ana Sayfa",
         icon: <HomeOutlined/>,
         path: "/homepage",
+    },
+    {
+        name:"Profil",
+        icon:<UserOutlined />,
+        path:"/profile"
     },
     {
         name: "Bildirimler",

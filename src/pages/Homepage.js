@@ -2,6 +2,8 @@ import React from "react";
 import { RiseOutlined } from "@ant-design/icons"
 import TweetBox from "../components/TweetBox";
 import Divider from "../components/Divider";
+import TweetItem from "../components/TweetItem";
+import TweetList from "../components/TweetList";
 
 const Homepage = () => {
     return (
@@ -19,6 +21,13 @@ const Homepage = () => {
                 <TweetBox/>
             </div>
             <Divider/>
+            {
+                TweetList.filter(({username})=> username === "ahmet")
+                    .map(({ name, username, tweet, date, retweetCount, likeCount, profilePicture }) => (
+                    <TweetItem name={name} tweet={tweet} username={username} date={date} retweetCount={retweetCount}
+                               likeCount={likeCount} profilePicture={profilePicture}/>
+                ))
+            }
         </div>
 
     )
