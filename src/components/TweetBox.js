@@ -15,9 +15,9 @@ const TweetBox = () => {
                 placeholder="Neler Oluyor?"
             />
             <div className="flex items-center justify-between">
-                <div className="flex -ml-3">
+                <div className="flex -ml-3 ">
                     <div className="flex items-center justify-between w-11 h-11 rounded-full ">
-                        <span className="w-6 h-6 text-primary-base"><FileImageOutlined/></span>
+                        <span className="w-6 h-6 text-primary-base "><FileImageOutlined/></span>
                     </div>
                     <div className="flex items-center justify-between w-11 h-11 rounded-full ">
                         <span className="w-6 h-6 text-primary-base"><FileGifOutlined/></span>

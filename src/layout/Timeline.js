@@ -28,7 +28,7 @@ const Widgets = () => {
                 <div className="flex items-center text-base font-bold ">
                     İlgini Çekebilecek Gündemler <span className="flex ml-7">{<SettingOutlined/>}</span>
                 </div>
-                <ul className="mt-3">
+                <ul className="mt-3 cursor-pointer">
                     {hashtagItems.map(({ id, header, tweet, type }, index) => (
                         <li key={index} onClick={handleClick.bind(this, type, tweet, header)}>
                             <div className="flex items-center justify-between">
@@ -55,7 +55,7 @@ const Widgets = () => {
                 <div className="flex items-center text-base font-bold ">
                     Kimi Takip Etmeli
                 </div>
-                <ul className="mt-3 flex-1 flex flex-col">
+                <ul className="mt-3 flex-1 flex flex-col cursor-pointer">
                     {WhoToFollow.map(({ imgsrc, imgalt, title, user }, index) => (
                         <li key={index} className="flex -ml-5 mt-5">
                             <img src={imgsrc} alt={imgalt} className="w-11 h-11 rounded-full"/>
@@ -66,7 +66,10 @@ const Widgets = () => {
                                         <span className="text-sm">{user}</span>
                                     </div>
                                 </div>
-                                <button className="bg-black text-white w-13 h-9 text-sm font-bold rounded-full px-4 py-2 pl-5 font-medium">Takip Et</button>
+                                <button
+                                    className="bg-black text-white w-13 h-9 text-sm font-bold rounded-full px-4 py-2 pl-5 font-medium">Takip
+                                    Et
+                                </button>
                             </div>
                         </li>
                     ))}

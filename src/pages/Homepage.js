@@ -22,10 +22,9 @@ const Homepage = () => {
             </div>
             <Divider/>
             {
-                TweetList.filter(({username})=> username === "ahmet")
-                    .map(({ name, username, tweet, date, retweetCount, likeCount, profilePicture }) => (
-                    <TweetItem name={name} tweet={tweet} username={username} date={date} retweetCount={retweetCount}
-                               likeCount={likeCount} profilePicture={profilePicture}/>
+                TweetList.map(({ name, username, tweet, date, retweetCount, likeCount, profilePicture,replyCount },index) => (
+                    <TweetItem key={index} name={name} tweet={tweet} username={username} date={date} retweetCount={retweetCount}
+                               likeCount={likeCount} profilePicture={profilePicture} replyCount={replyCount}/>
                 ))
             }
         </div>

@@ -4,12 +4,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Sidebar from "./layout/Sidebar";
 import Timeline from "./layout/Timeline";
 import Content from "./layout/Content";
-import history from "./history";
 
 function App() {
     return (
         <Background>
-            <Router history={history}>
+            <Router>
                 <div className="w-72 ">
                     <Sidebar/>
                 </div>

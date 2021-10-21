@@ -17,9 +17,9 @@ const menuItems = [
         path: "/homepage",
     },
     {
-        name:"Profil",
-        icon:<UserOutlined />,
-        path:"/profile"
+        name: "Profil",
+        icon: <UserOutlined/>,
+        path: "/profile"
     },
     {
         name: "Bildirimler",
@@ -46,6 +46,7 @@ const Sidebar = () => {
                     <div
                         className="mt-1 mb-4 ml-1 flex items-center justify-center w-8 h-8 text-primary-base hover:bg-gray-light  rounded-full">
                         <TwitterOutlined style={{ fontSize: 30, }}/>
+
                     </div>
                     {menuItems.map(({ name, icon, path }, index) => (
                         <li key={index}>
